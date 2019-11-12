@@ -1,0 +1,217 @@
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* //pour centrer body html
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+
+    width: 100% !important;
+}
+
+// fin pour centrer */
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lobster", cursive;
+}
+
+.erreur {
+  color: red !important;
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+.connexion {
+  transform: scale(1.5, 1.5);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 3%;
+
+    h1 {
+      font-weight: 600;
+
+      color: white;
+
+      span {
+        font-size: 48px;
+        /* font-weight: 800; */
+        background: -webkit-linear-gradient(
+          64deg,
+          rgb(237, 159, 22),
+          rgb(243, 80, 0)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+      }
+    }
+
+    h2,
+    p,
+    a {
+      color: white;
+    }
+
+    p {
+      span {
+        color: rgb(237, 159, 22);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.inscription {
+  transform: scale(1.5, 1.5);
+  overflow: hidden;
+  display: flex;
+  h2,
+  table {
+    color: white;
+  }
+  h2 {
+    background: -webkit-linear-gradient(
+      64deg,
+      rgb(237, 159, 22),
+      rgb(243, 80, 0)
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  div {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    color: white;
+    span {
+      color: rgb(237, 159, 22);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+}
+
+.profil {
+  display: flex;
+  overflow: hidden;
+
+  .block {
+    transform: scale(2, 2);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  span {
+    color: rgb(237, 159, 22);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  div.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    a {
+      color: white;
+
+      &:hover {
+        color: rgb(237, 159, 22);
+      }
+    }
+  }
+  div.link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    a {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color: rgba(237, 159, 22, 0.6);
+
+      &:hover {
+        color: rgba(237, 159, 22, 1);
+      }
+    }
+  }
+}
+
+.edition {
+  display: flex;
+  overflow: hidden;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  h2 {
+    color: white;
+    span {
+      color: rgb(237, 159, 22);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+  div {
+    margin: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      margin: 10px;
+      padding: 3px;
+      color: white;
+    }
+
+    input.send {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color: rgba(237, 159, 22, 0.6);
+      background: rgba(0, 0, 0, 0);
+      border: solid 0px;
+      &:hover {
+        color: rgba(237, 159, 22, 1);
+      }
+    }
+  }
+}
+//mettre un mediaqueries pour edition avec :     transform: scale(1.4, 1.4);

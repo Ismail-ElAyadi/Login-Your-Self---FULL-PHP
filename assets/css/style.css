@@ -1,0 +1,272 @@
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* //pour centrer body html
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+
+    width: 100% !important;
+}
+
+// fin pour centrer */
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lobster", cursive;
+}
+
+.erreur {
+  color: red !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+
+.connexion {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.connexion div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 3%;
+}
+
+.connexion div h1 {
+  font-weight: 600;
+  color: white;
+}
+
+.connexion div h1 span {
+  font-size: 48px;
+  /* font-weight: 800; */
+  background: -webkit-linear-gradient(64deg, #ed9f16, #f35000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.connexion div h2,
+.connexion div p,
+.connexion div a {
+  color: white;
+}
+
+.connexion div p span {
+  color: #ed9f16;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.connexion div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inscription {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inscription h2,
+.inscription table {
+  color: white;
+}
+
+.inscription h2 {
+  background: -webkit-linear-gradient(64deg, #ed9f16, #f35000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inscription div {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inscription p {
+  color: white;
+}
+
+.inscription p span {
+  color: #ed9f16;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.profil .block {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.profil span {
+  color: #ed9f16;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.profil div.infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.profil div.infos a {
+  color: white;
+}
+
+.profil div.infos a:hover {
+  color: #ed9f16;
+}
+
+.profil div.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.profil div.link a {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgba(237, 159, 22, 0.6);
+}
+
+.profil div.link a:hover {
+  color: #ed9f16;
+}
+
+.edition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.edition h2 {
+  color: white;
+}
+
+.edition h2 span {
+  color: #ed9f16;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.edition div {
+  margin: auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edition div div {
+  margin: 10px;
+  padding: 3px;
+  color: white;
+}
+
+.edition div input.send {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgba(237, 159, 22, 0.6);
+  background: rgba(0, 0, 0, 0);
+  border: solid 0px;
+}
+
+.edition div input.send:hover {
+  color: #ed9f16;
+}
+/*# sourceMappingURL=style.css.map */
