@@ -4,7 +4,7 @@ session_start();
 
 
 
-$bdd = new PDO('mysql:host=remotemysql.com;dbname=rLhBlmVTwv', 'rLhBlmVTwv', 'mA8I6jo0BR');
+$bdd = new PDO('mysql:host=remotemysql.com;dbname=75ye0gPkZq', '75ye0gPkZq', 'wnSdVdtQA8');
 
 
 if(isset($_POST['formconnexion'])) {
